@@ -1,0 +1,40 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin:5px;
+    float:right;
+    clear:both;
+}
+.b1{
+    float: right;
+}
+div > p{
+    color:blue
+}
+.abc{
+    height: 200px;
+    width: 400px;
+    color:blueviolet;
+    background-color: burlywood;
+    padding:15px;
+    margin: 10px;
+    border-style: solid;
+    /* border:5px solid black; */
+    border-color:red;
+    border-width: 2px;
+    /* //height==100px m--10px p-10px --- 140px */
+    /* box-sizing:content-box; */
+    /* //height==100px m--10px p-10px --- 40p+m-- 60px */
+
+    box-sizing: border-box;
+
+}
+#txt{
+    color:chocolate;
+    font-size: large;
+    font-weight: 900;
+    background-color: black;
+    display: block;
+    
+}
