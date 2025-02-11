@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50]
+        // document.write('<br> ',arr[0])
+        // document.write('<br> ',arr[2])
+        // for(let i=0;i<arr.length;i++){
+        //     document.write('<br> '+arr[i])           
+        // }
+        // for(let x in arr){ //object- key-value pair 
+        //     document.write('<br> '+x+' is '+arr[x])            
+        // }
+        for(let x of arr){
+            document.write('<br> '+x)            
+        }
+        document.write('<br> <hr> <br>')
+        document.write('Array length is '+arr.length)
+        arr.push(55)
+        arr.push(50)
+        arr.push(602)
+        document.write('<br> '+arr)
+        arr.pop()
+        document.write('<br> '+arr)
+        arr.unshift(222)
+        document.write('<br> '+arr)
+        arr.shift()
+        document.write('<br> '+arr)
+        //splice
+        arr.splice(2,3,11,22,33,44,55,66,77)
+        document.write('<br> '+arr)
+        //slice
+        let new_arr = arr.slice(3)
+        document.write('<br> '+new_arr)
+
+    </script>
+</body>
+</html>
