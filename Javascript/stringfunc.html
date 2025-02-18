@@ -25,6 +25,12 @@
         let a = "123"
         let b = a.padEnd(6,"RS") //RSR123
         document.write('<br> '+b)
+        let pr = "Hi hello hi how are you ? hi Hi"
+        // let pr1 = pr.replace(/HI/ig,"TEST")
+        let pr1 = pr.replaceAll(/Hi/gi,"TEST")
+        //case sensitive at a time only one word replace
+        document.write('<br> '+pr)
+        document.write('<br> '+pr1)
     </script>
 </body>
 </html>
