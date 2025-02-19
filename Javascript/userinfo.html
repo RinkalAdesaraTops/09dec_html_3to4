@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <ul id="qual"></ul>
     <script>
         //object - {} key:value
         let emp = {
@@ -23,6 +24,15 @@
                 this.salary = n
             }
         }
+        let tr = ''
+        let a = emp.qualification.map((i)=>{
+            // tr += "<li>"+i+"</li>"
+
+            tr += `<li>
+                    ${i}
+                </li>`
+        })
+document.getElementById('qual').innerHTML = tr
         // document.write('<br> Name is '+emp['name'])
         // document.write('<br> Age is '+emp.age)
         // document.write('<br> Salary is '+emp.salary)
